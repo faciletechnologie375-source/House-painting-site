@@ -37,10 +37,10 @@ echo 2. Copiez l'URL du depot (HTTPS)
 echo    Exemple: https://github.com/votre-nom/house-painting-site.git
 echo.
 echo 3. Revenez ici et appuyez sur une touche...
-pause > nul
+pause > nul 
 echo.
 echo Collez l'URL de votre depot GitHub :
-set /p repo_url="URL du depot: "
+set /p repo_url="URL du depot: "https://github.com/faciletechnologie375-source/House-painting-site.git"
 echo.
 echo Connexion au depot distant...
 git remote add origin %repo_url%
