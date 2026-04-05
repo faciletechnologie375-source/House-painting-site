@@ -1,0 +1,16 @@
+{
+  "name": "HOUSE PAINTING SERVICES CENTER",
+  "short_name": "HOUSE PAINTING",
+  "start_url": "/House-painting-site/",
+  "display": "standalone",
+  "background_color": "#fbffff",
+  "theme_color": "#2c3e50",
+  "icons": [
+    {
+      "src": "images/favicon.svg",
+      "sizes": "64x64",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
+}

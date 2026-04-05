@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" role="img" aria-label="Logo House Painting">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3498db"/>
+      <stop offset="100%" stop-color="#2c3e50"/>
+    </linearGradient>
+  </defs>
+  <circle cx="60" cy="60" r="56" fill="url(#bg)"/>
+  <rect x="52" y="26" width="16" height="40" rx="6" fill="#ffffff" transform="rotate(25 60 46)"/>
+  <path d="M36 56c10-18 34-24 50-12 4 3 7 7 9 11-9 7-23 12-38 12-8 0-15-1-21-3z" fill="#ffffff" opacity="0.95"/>
+  <path d="M33 70h54c5 0 9 4 9 9v8H24v-8c0-5 4-9 9-9z" fill="#f4d03f"/>
+  <text x="60" y="100" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#ffffff">PAINT</text>
+</svg>
