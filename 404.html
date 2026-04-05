@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Page introuvable | HOUSE PAINTING</title>
-    <meta http-equiv="refresh" content="1; url=/House-painting-site/">
     <style>
         body {
             margin: 0;
@@ -38,14 +37,27 @@
         }
     </style>
     <script>
-        window.location.replace('/House-painting-site/');
+        (function () {
+            const isGithubPages = window.location.hostname.endsWith('github.io');
+            const firstSegment = window.location.pathname.split('/').filter(Boolean)[0];
+            const basePath = isGithubPages && firstSegment ? `/${firstSegment}/` : '/';
+
+            window.addEventListener('DOMContentLoaded', function () {
+                const link = document.getElementById('home-link');
+                if (link) {
+                    link.href = basePath;
+                }
+            });
+
+            window.location.replace(basePath);
+        })();
     </script>
 </head>
 <body>
     <div class="card">
         <h1>Erreur 404</h1>
         <p>La page demandée est introuvable. Redirection vers l’accueil…</p>
-        <a href="/House-painting-site/">Revenir au site</a>
+        <a id="home-link" href="/">Revenir au site</a>
     </div>
 </body>
 </html>
