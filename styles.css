@@ -397,6 +397,34 @@ section[id] {
     background-color: #0056b3;
 }
 
+.filter-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+    flex-wrap: wrap;
+}
+
+.filter-btn {
+    padding: 0.5rem 1rem;
+    background-color: #f8f9fa;
+    border: 2px solid #007bff;
+    color: #007bff;
+    cursor: pointer;
+    border-radius: 25px;
+    font-size: 0.9rem;
+    transition: all 0.3s;
+}
+
+.filter-btn:hover, .filter-btn.active {
+    background-color: #007bff;
+    color: white;
+}
+
+.portfolio-item.hidden {
+    display: none;
+}
+
 /* Contact */
 .contact-section {
     background-color: #ffffff;

@@ -58,6 +58,30 @@ document.getElementById('contact-form').addEventListener('submit', function(e) {
         submitButton.disabled = false;
         submitButton.textContent = 'Envoyer la demande';
     });
+
+// Portfolio filtering
+document.addEventListener('DOMContentLoaded', function() {
+    const filterButtons = document.querySelectorAll('.filter-btn');
+    const portfolioItems = document.querySelectorAll('.portfolio-item');
+
+    filterButtons.forEach(button => {
+        button.addEventListener('click', function() {
+            // Remove active class from all buttons
+            filterButtons.forEach(btn => btn.classList.remove('active'));
+            // Add active to clicked
+            this.classList.add('active');
+
+            const filter = this.getAttribute('data-filter');
+            portfolioItems.forEach(item => {
+                if (filter === 'all' || item.classList.contains(filter)) {
+                    item.classList.remove('hidden');
+                } else {
+                    item.classList.add('hidden');
+                }
+            });
+        });
+    });
+});
 });
 
 // Portfolio gallery lightbox
