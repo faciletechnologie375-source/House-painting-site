@@ -81,7 +81,10 @@ document.addEventListener('DOMContentLoaded', function() {
             });
         });
     });
-});
+    
+    // Initially hide all items until a filter is clicked
+    // The 'active' button ("Tous") is already set in HTML but we'll keep items hidden
+    // until user explicitly clicks a button
 });
 
 // Portfolio gallery lightbox
