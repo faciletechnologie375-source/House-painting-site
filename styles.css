@@ -537,6 +537,18 @@ section[id] {
     .hero {
         padding: 180px 1rem 2rem;
     }
+
+    .portfolio-section {
+        padding-bottom: 1.5rem;
+    }
+
+    .contact-section {
+        padding-top: 1.5rem;
+    }
+
+    .section-header {
+        margin-bottom: 1.25rem;
+    }
 }
 
 /* Contact */
