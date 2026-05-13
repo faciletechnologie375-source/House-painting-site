@@ -58,6 +58,7 @@ document.getElementById('contact-form').addEventListener('submit', function(e) {
         submitButton.disabled = false;
         submitButton.textContent = 'Envoyer la demande';
     });
+});
 
 // Portfolio filtering
 document.addEventListener('DOMContentLoaded', function() {
