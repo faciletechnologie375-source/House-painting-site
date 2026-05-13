@@ -401,28 +401,142 @@ section[id] {
     display: flex;
     justify-content: center;
     gap: 1rem;
-    margin-bottom: 2rem;
+    margin-bottom: 1.25rem;
     flex-wrap: wrap;
 }
 
+.mobile-filter-note {
+    text-align: center;
+    color: #5d6d7e;
+    margin-bottom: 1.5rem;
+    font-size: 0.95rem;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .filter-btn {
-    padding: 0.5rem 1rem;
+    padding: 0.65rem 1.1rem;
     background-color: #f8f9fa;
     border: 2px solid #007bff;
     color: #007bff;
     cursor: pointer;
-    border-radius: 25px;
-    font-size: 0.9rem;
-    transition: all 0.3s;
+    border-radius: 999px;
+    font-size: 0.95rem;
+    transition: all 0.3s ease;
+    min-width: 120px;
 }
 
 .filter-btn:hover, .filter-btn.active {
     background-color: #007bff;
     color: white;
+    box-shadow: 0 8px 20px rgba(0, 123, 255, 0.18);
 }
 
 .portfolio-item.hidden {
     display: none;
+}
+
+@media (max-width: 768px) {
+    .filter-buttons {
+        flex-direction: column;
+        align-items: center;
+        gap: 0.75rem;
+    }
+
+    .filter-btn {
+        width: 100%;
+        max-width: 280px;
+        padding: 0.75rem 1rem;
+        font-size: 0.95rem;
+    }
+
+    .portfolio-grid {
+        gap: 1.5rem;
+    }
+
+    .portfolio-item {
+        border-radius: 22px;
+    }
+
+    .portfolio-item:hover {
+        transform: none;
+    }
+
+    .portfolio-overlay {
+        transform: translateY(0);
+        padding: 1.4rem 1rem;
+        background: linear-gradient(transparent, rgba(0,0,0,0.88));
+    }
+
+    .portfolio-overlay h4 {
+        font-size: 1.2rem;
+    }
+
+    .portfolio-overlay p {
+        font-size: 0.95rem;
+    }
+
+    .portfolio-overlay .download-btn {
+        width: 100%;
+        text-align: center;
+        padding: 0.75rem 1rem;
+        font-size: 0.95rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .filter-buttons {
+        gap: 0.6rem;
+    }
+
+    .filter-btn {
+        width: 100%;
+        max-width: 100%;
+        padding: 0.8rem 1rem;
+        font-size: 0.9rem;
+    }
+
+    .mobile-filter-note {
+        font-size: 0.92rem;
+        color: #64748b;
+    }
+
+    .portfolio-item img {
+        height: 200px;
+    }
+
+    .portfolio-overlay h4 {
+        font-size: 1.1rem;
+    }
+
+    .portfolio-overlay p {
+        font-size: 0.88rem;
+    }
+
+    section {
+        padding: 2.5rem 1rem;
+    }
+
+    .cta-button {
+        width: 100%;
+    }
+
+    .about-text h2 {
+        font-size: 2rem;
+    }
+
+    .hero-content h2 {
+        font-size: 1.85rem;
+    }
+
+    .hero-content p {
+        font-size: 1rem;
+    }
+
+    .hero {
+        padding: 180px 1rem 2rem;
+    }
 }
 
 /* Contact */
