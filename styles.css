@@ -151,10 +151,18 @@ nav {
     display: flex;
     gap: 2rem;
     margin-bottom: 2rem;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 .stat {
     text-align: center;
+    min-width: 140px;
+    padding: 1rem 1.25rem;
+    background-color: rgba(255,255,255,0.12);
+    border: 1px solid rgba(255,255,255,0.2);
+    border-radius: 18px;
+    backdrop-filter: blur(6px);
 }
 
 .stat h3 {
@@ -164,8 +172,9 @@ nav {
 }
 
 .stat p {
-    font-size: 0.9rem;
-    opacity: 0.8;
+    font-size: 0.95rem;
+    opacity: 0.9;
+    line-height: 1.5;
 }
 
 .hero-image {
@@ -780,6 +789,11 @@ footer {
 
     .stat {
         flex: 1 1 120px;
+        max-width: 220px;
+        padding: 1rem 1.25rem;
+        background-color: rgba(255,255,255,0.14);
+        border: 1px solid rgba(255,255,255,0.17);
+        border-radius: 18px;
     }
 
     .stat h3 {
