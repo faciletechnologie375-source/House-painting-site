@@ -322,7 +322,7 @@ section[id] {
 
 .about-text li {
     margin-bottom: 1rem;
-    padding-left: 2rem;
+    padding-left: 1.5rem;
     position: relative;
 }
 
@@ -562,14 +562,19 @@ section[id] {
         padding-bottom: 0.8rem;
     }
 
-    .contact-section {
-        padding-top: 0.8rem;
+    .contact-info {
+        gap: 1.2rem;
     }
 
-    .section-header {
-        margin-bottom: 1rem;
+    .info-item {
+        gap: 0.8rem;
     }
-}
+
+    .info-icon {
+        font-size: 1.5rem;
+        margin-right: 0rem;
+        width: 1.5rem;
+    }
 
 /* Contact */
 .contact-section {
@@ -798,26 +803,6 @@ footer {
         gap: 1rem;
     }
 
-    /* Optimize hero section for mobile */
-    .hero {
-        padding: 185px 1rem 2.5rem;
-        text-align: center;
-    }
-
-    .hero-content h2 {
-        font-size: 1.75rem;
-        margin-bottom: 1rem;
-    }
-
-    .hero-content p {
-        font-size: 0.98rem;
-        margin-bottom: 1.5rem;
-    }
-
-    .hero-stats {
-        margin: 1.5rem 0;
-    }
-
     .stat {
         flex: 1 1 120px;
         max-width: 220px;
@@ -837,81 +822,8 @@ footer {
         gap: 2rem;
     }
 
-    /* Optimize contact info spacing for mobile */
-    .contact-info {
-        gap: 1.2rem;
-    }
-
-    .info-item {
-        gap: 0.8rem;
-        align-items: flex-start;
-    }
-
-    .info-icon {
-        font-size: 1.5rem;
-        margin-right: 0.5rem;
-        width: 1.5rem;
-        flex-shrink: 0;
-    }
-
     .contact-form {
         padding: 1.25rem;
-    }
-
-    /* Optimize services and other sections for mobile */
-    .services-grid {
-        grid-template-columns: 1fr;
-        gap: 1.5rem;
-    }
-
-    .service-item {
-        padding: 1.5rem 1rem;
-        text-align: center;
-        border-radius: 12px;
-    }
-
-    .service-icon {
-        font-size: 2.5rem;
-        margin-bottom: 1rem;
-        display: block;
-    }
-
-    /* Optimize about section for mobile */
-    .about-section {
-        padding: 3rem 1rem;
-    }
-
-    .about-logo {
-        margin-bottom: 1.5rem;
-        text-align: center;
-    }
-
-    .about-text h2 {
-        font-size: 1.8rem;
-        margin-bottom: 1rem;
-    }
-
-    .about-text p {
-        font-size: 0.95rem;
-        margin-bottom: 1rem;
-    }
-
-    /* Optimize portfolio for mobile */
-    .portfolio-grid {
-        grid-template-columns: 1fr;
-        gap: 1.5rem;
-    }
-
-    .portfolio-item {
-        border-radius: 12px;
-    }
-
-    .portfolio-overlay h4 {
-        font-size: 1.1rem;
-    }
-
-    .portfolio-overlay p {
-        font-size: 0.9rem;
     }
 
     .footer-content {
@@ -976,7 +888,7 @@ footer {
 
     .about-text li {
         margin-bottom: 1rem;
-        padding: 0.8rem 1rem 0.8rem 2rem;
+        padding: 0.8rem 1rem;
         border-radius: 10px;
         font-size: 0.9rem;
     }
@@ -1004,41 +916,20 @@ footer {
         font-size: 0.75rem;
     }
 
-    /* Further optimize for very small screens */
+    .logo-text h1 {
+        font-size: 1.05rem;
+    }
+
+    .logo-text span {
+        font-size: 0.75rem;
+    }
+
     .hero {
-        padding: 150px 1rem 2rem;
+        padding: 185px 1rem 2.5rem;
     }
 
     .hero-content h2 {
-        font-size: 1.6rem;
-        margin-bottom: 0.8rem;
-    }
-
-    .hero-content p {
-        font-size: 0.9rem;
-        margin-bottom: 1rem;
-    }
-
-    .hero-stats {
-        margin: 1rem 0;
-        gap: 0.5rem;
-    }
-
-    .stat {
-        padding: 0.8rem 1rem;
-    }
-
-    .stat h3 {
-        font-size: 1.8rem;
-    }
-
-    .service-item {
-        padding: 1.2rem 0.8rem;
-    }
-
-    .service-icon {
-        font-size: 2rem;
-        margin-bottom: 0.8rem;
+        font-size: 1.75rem;
     }
 
     .hero-content p {
@@ -1053,6 +944,21 @@ footer {
 
     .contact-form {
         padding: 1rem;
+    }
+
+    /* Optimize contact info spacing for mobile */
+    .contact-info {
+        gap: 1rem;
+    }
+
+    .info-item {
+        gap: 0.6rem;
+    }
+
+    .info-icon {
+        font-size: 1.3rem;
+        width: 1.3rem;
+        margin-right: 0rem;
     }
 
     .form-group input,
