@@ -745,4 +745,22 @@ footer {
     .portfolio-item img {
         height: 220px;
     }
+
+    .filter-buttons {
+        gap: 0.5rem;
+    }
+
+    .filter-btn {
+        padding: 0.4rem 0.8rem;
+        font-size: 0.85rem;
+    }
+
+    .portfolio-overlay .download-btn {
+        padding: 0.4rem 0.8rem;
+        font-size: 0.85rem;
+    }
+
+    .portfolio-grid {
+        gap: 1rem;
+    }
 }
